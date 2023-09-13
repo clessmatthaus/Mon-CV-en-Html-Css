@@ -1,0 +1,72 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image:white;
+    font-family: 'Raleway', sans-serif;
+}
+.fix{
+    clear: both;
+}
+.main{
+    width: 860px;
+    height: 1160px;
+    border: 2px solid rgb(144, 135, 135);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 8px 15px 5px #a39d9d;
+    margin: 20px auto;
+}
+.section-main{
+    width: 650px;
+    height: 1160px;
+    border: 1px solid rgb(144, 135, 135);
+    margin-left: 105px;    
+}
+.top{
+    width: 650px;
+    background-color: rgb(139, 4, 4);
+    text-align: center;
+    color: white;        
+}
+.top p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase; 
+}
+.top p span{
+    color: rgb(181, 223, 220);
+}
+.top h1{
+    padding-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.profil{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    margin-top: 20px;
+    cursor: zoom-in;
+}
+.profil:hover{
+    width: 160px;
+    height: 160px;
+}
+.contact{
+   display: flex; 
+   flex-direction: row; 
+   flex-wrap: wrap;
+   margin-top: -17px;
+   justify-content: center;
+   background-color: rgb(34, 10, 10);
+   
+}
+.contact p{
+    flex-basis: 30%;
+    text-align: center;
+    color:white;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -11,17 +11,17 @@ body{
     width: 1160px;
     height: 1160px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 5px 8px 15px 5px #a39d9d;
+    box-shadow: 5px 7px 15px 5px #626060;
     margin: 20px auto;
+    border: 2px solid black;
 }
 .section-main{
-    width: 837px;
+    width: 836px;
     height: 1160px;
-    border: 1px solid rgb(10, 10, 10);
     margin-left: 150px;    
 }
 .top{
-    width: 837px;
+    width: 836px;
     background-color: rgb(139, 4, 4);
     text-align: center;
     color: white;        
@@ -44,50 +44,55 @@ body{
     height: 110px;
     width: 110px;
     border-radius: 100%;
+    box-shadow:5px 1px 25px 5px #fcfcfd; 
     margin-top: 20px;
     cursor: zoom-in;
 }
 .profil:hover{
     width: 160px;
     height: 160px;
+    box-shadow:5px 1px 25px 15px #fbfbfb; 
 }
 .contact{
    display: flex; 
-   
    flex-direction: row; 
    flex-wrap: wrap;
-   margin-top: -17px;
+   margin-top: -11px;
    padding-left: 18px;
    padding-right: 1px;
    background-color: rgb(34, 10, 10);
 }
 .adress{
-    width: 155px;
     padding-left: 25px;
     text-align: start;
+    cursor: pointer;
 }
 .email{
-    width: 165px;
     text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
 }
 .phone{
-    width: 160px;
     text-align: end;
+    margin-top: 10px;
+    cursor: pointer;
 }
-.contact div{
-   
+.contact li{
     color:white;
     flex-basis: 30%;
     font-size: 12px;
     padding: 10px;
+    list-style-type: none;
     font-weight: bold;
     font-style: italic;
 }
 .left-section{
-   height: 739px;
+    height: 789px;
     width: 35%;
     float: left;
-    padding: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-top: -16px;
     background-color: rgb(139, 4, 4);
 }
 .left-section div{
@@ -103,12 +108,20 @@ body{
 }
 .left-section h2{
     background-color: rgb(237, 229, 183);
-    margin-left: -7px;
+    margin-left: -5px;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    cursor: pointer;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
+}
+.left-section h2:hover{
+    background-color: white;
+    transition: 1s;
+}
+aside span{
+    text-transform: uppercase;
 }
 .p1{
     color: white;
@@ -130,17 +143,20 @@ body{
     opacity: 0.4;  
 }
 .right-section{
-    height: 700px;
+    height: 765px;
     float: left;
-    width: 50%;
-    padding-left: 20px;
-
+    width: 61%;
+    margin-top: -16px;
+    padding-right: -20px;
+    border-right: 2px solid rgb(10, 10, 10);
+    padding-left: 26px;
+    
 }
 .right-section h2{
     background-color: rgb(237, 229, 183);
     width: 470px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 18px;
@@ -170,14 +186,49 @@ body{
     font-weight: bold;
 }
 .logo-lien{
-    margin-top: 747px;
-    height: 118px;
+    margin-top: 764px;
+    height: 106px;
     background-color: rgb(139, 4, 4);
 }
 .logo-lien p{
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
     color: white;
     font-size: 11px;
     font-weight: bold;
+}
+.gauche::before{
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: 0px;
+    cursor: pointer;
+    background-color: rgb(139, 4, 4);
+    width:0%;
+    height:100%; 
+}
+.gauche:hover::before{
+    width: 2%;
+}
+.gauche{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    top: 5px;
+    left: 0%;
+    border-left: 10px solid rgb(139, 4, 4);  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.liens-contact{
+   height: 3px; 
+   background-color: white;
+   width: 0%;
+   transition:1s;
+}
+nav li:hover>div{
+    width: 100%;
 }
